@@ -132,7 +132,7 @@ const deleteAllBooks = async (req, res) => {
         deleteAll: deleteAll,
     });
 
-    } catch (er) {
+    } catch (error) {
         res.status(501).json({ errorMessage: error.message, error: error });
     }
 }
