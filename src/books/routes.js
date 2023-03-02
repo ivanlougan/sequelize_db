@@ -2,7 +2,10 @@ const { Router } = require("express");
 
 const bookRouter = Router();
 
-const { getSingleBookByTitle, addBook, getAllBooks, getAllBooksByGenre, updateBook, deleteAllBooks, deleteBook } = require("./controllers");
+const { getSingleBookByTitle, 
+        addBook, getAllBooks, 
+        getAllBooksByGenre, updateBook, 
+        deleteAllBooks, deleteBook } = require("./controllers");
 
 bookRouter.post("/books/addbook", addBook);
 bookRouter.get("/books/getallbooks", getAllBooks);
